@@ -5,10 +5,14 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 public class MyTables {
 
-	public static void main(String[] args) {
+//	public static void main(String[] args) {
+	@Test
+	public void Test10()
+	{
 		WebDriver driver = new MyDriver().getDriver();
 		driver.get("https://the-internet.herokuapp.com/tables");
 		WebElement table2 = driver.findElement(By.cssSelector("#table2"));
@@ -26,6 +30,7 @@ public class MyTables {
 //			System.out.println(text);
 //			
 //		}
-	}
+//	}
 
+}
 }
